@@ -1,6 +1,7 @@
 import React from 'react';
 import { Shield, Users, TrendingUp, Smartphone, Award, FileText, Sun, Moon, ArrowRight, CheckCircle } from 'lucide-react';
 import { useLang } from '../context/LangContext';
+import { TontineIcon } from './TontineIcon';
 
 export default function LandingPage({ onGetStarted, darkMode, toggleDark }) {
   const { lang, toggleLang, t } = useLang();
@@ -32,12 +33,7 @@ export default function LandingPage({ onGetStarted, darkMode, toggleDark }) {
         display: 'flex', alignItems: 'center', justifyContent: 'space-between'
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <div style={{
-            width: 36, height: 36, borderRadius: '10px',
-            background: 'linear-gradient(135deg, #6366f1, #a855f7)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontWeight: 800, fontSize: '14px', color: '#fff'
-          }}>IK</div>
+          <TontineIcon size={36} color="#ffffff" />
           <span style={{ fontWeight: 800, fontSize: '1.2rem', color: 'var(--text-primary)' }}>IKIBINA</span>
         </div>
 
@@ -197,7 +193,7 @@ export default function LandingPage({ onGetStarted, darkMode, toggleDark }) {
       {/* FOOTER */}
       <footer style={{ borderTop: '1px solid var(--border-glass)', padding: '24px 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <div style={{ width: 28, height: 28, borderRadius: '8px', background: 'linear-gradient(135deg, #6366f1, #a855f7)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '11px', color: '#fff' }}>IK</div>
+          <TontineIcon size={28} color="#ffffff" />
           <span style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '0.9rem' }}>IKIBINA</span>
         </div>
         <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>© {new Date().getFullYear()} {t('footerText')}</span>
